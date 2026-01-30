@@ -1,0 +1,94 @@
+:root {
+    --main-color: #eeaa51;
+    --font: Figtree;
+    --radius: 50px;
+}
+
+*,html {
+    font-family: var(--font);
+}
+*::selection {
+    background-color: #000;
+    color: #fff;
+}
+h1, h2, h3, h4, h5, h6, span {
+    /*line-height: 1.2;*/
+    visibility: visible;
+}
+
+body {
+    font-family: var(--font);
+}
+
+header {
+    background-image: url('../img/img\ \(6\).jpg');
+    background-size: cover;
+    border-radius: 20px;
+    height: 760px;
+}
+header input {
+    background: rgba(0, 0, 0, 0.192);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+section h4 {
+    color: var(--main-color);
+}
+
+#services #card {
+    animation: zoomIn 1s;
+    background-size: cover;
+    border-radius: 20px;
+    height: 500px;
+    transition: all 0.3s ease-in 0s;
+}
+#services #card:hover {
+    transform: translateY(10px);
+    opacity: 0.7;
+}
+#services #card:nth-child(1) {
+    background-image: linear-gradient(to top, rgba(8, 8, 8, 0.541), rgba(8, 8, 8, 0.147)),
+    url('../img/img\ \(1\).jpg');
+    height: 50vh;
+}
+#services #card:nth-child(2) {
+    background-image: linear-gradient(to top, rgba(8, 8, 8, 0.541), rgba(8, 8, 8, 0.147)),
+    url('../img/img\ \(4\).jpg');
+    height: 25vh;
+}
+#services #card:nth-child(3) {
+    background-image: linear-gradient(to top, rgba(8, 8, 8, 0.541), rgba(8, 8, 8, 0.147)),
+    url('../img/img\ \(2\).jpg');
+    height: 25vh;
+}
+
+/*  ######################################### */
+
+/* Testimonials */
+.testimonials #card {
+    border-style: solid;
+    border-radius: 20px;
+    border: 1px solid #cdcdcd;
+    width: 380px;
+    margin-bottom: 35px;
+}
+
+.testimonials #card:hover {
+    border-style: double;
+    border: 1px solid var(--main-color);
+    box-shadow: 20px 10px 15px 10px rgba(0, 0, 0, 0.105);
+}
+
+#suscribe {
+    background-image: url('../img/img\ \(8\).jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 20px;
+    height: 600px;
+}
+
+footer {
+    background-color: #000;
+    border-radius: 20px;
+}
